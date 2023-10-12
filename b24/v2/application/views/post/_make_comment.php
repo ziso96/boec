@@ -20,6 +20,7 @@
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary waves-effect waves-float waves-light"><?php echo trans("post_comment"); ?></button>
                 </div>
+                <div id="message-comment-result" class="message-comment-result"></div>
             </div>
         </form>
     </div>
@@ -46,6 +47,7 @@
                     <?php generate_recaptcha(); ?>
                     <button type="submit" class="btn btn-primary waves-effect waves-float waves-light"><?php echo trans("post_comment"); ?></button>
                 </div>
+                <div id="message-comment-result" class="message-comment-result"></div>
             </div>
         </form>
     </div>

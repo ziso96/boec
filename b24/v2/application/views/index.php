@@ -208,7 +208,7 @@
 
 		<!-- posts -->
 					<div class="col-xs-12 col-sm-12  <?php echo ($layout == "layout_3" || $layout == "layout_6") ? '' : ''; ?>">
-						<div class="row">
+						<div class="row match-height">
 							<!-- printf posts -->
 							<?php $count = 0; ?>
 

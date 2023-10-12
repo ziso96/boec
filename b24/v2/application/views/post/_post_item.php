@@ -48,7 +48,7 @@
                 </h4>
                 <div class="d-flex">
                     <div class="avatar me-50">
-                        <img src="assets/img/user.png" alt="BOEV" width="24" height="24" />
+                        <img src="assets/img/user.png" alt="BOEC" width="24" height="24" />
                     </div>
                     <div class="author-info">
                         <small><a href="#" class="text-body">Dərc edilib</a></small>
@@ -62,7 +62,7 @@
                     </a>
                 </div>
                 <p class="card-text blog-content-truncate">
-                    <?php echo (character_limiter($item->content, 50, '...')); ?>
+                    <?php echo (character_limiter($item->content, 225, '...')); ?>
                 </p>
                 <hr />
                 <div class="d-flex justify-content-between align-items-center">

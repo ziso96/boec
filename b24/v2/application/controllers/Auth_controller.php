@@ -23,9 +23,9 @@ class Auth_controller extends Home_Core_Controller
 		$data['description'] = trans("login") . " - " . $this->settings->application_name;
 		$data['keywords'] = trans("login") . "," . $this->settings->application_name;
 
-		$this->load->view('partials/_header', $data);
+		// $this->load->view('partials/_header', $data);
 		$this->load->view('auth/login');
-		$this->load->view('partials/_footer');
+		// $this->load->view('partials/_footer');
 	}
 
 	/**

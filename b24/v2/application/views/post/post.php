@@ -153,8 +153,8 @@
 
                                 </div>
 
-                            <?php if ($general_settings->comment_system == 1): ?>
-    <div class="col-12 mt-1" id="blogComment">
+        <?php if ($general_settings->comment_system == 1): ?>
+        <div class="col-12 mt-1" id="blogComment">
         <?php if ($general_settings->comment_system == 1): ?>
         <h6 class="section-label mt-25"><?php echo trans("comments"); ?></h6>
         <?php endif; ?>
@@ -173,19 +173,6 @@
 
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
