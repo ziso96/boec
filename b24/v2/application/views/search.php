@@ -1,36 +1,48 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<!-- Section: main -->
-<section id="main">
-    <div class="container">
-        <div class="row">
-            <!-- breadcrumb -->
-            <div class="page-breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="<?php echo lang_base_url(); ?>"><?php echo html_escape(trans("home")); ?></a>
-                    </li>
-                    <li class="breadcrumb-item active"><?php echo html_escape(trans("search")); ?></li>
-                    </li>
-                </ol>
+<div class="app-content content ">
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+    <div class="content-wrapper container-xxl p-0">
+
+        <div class="content-header row">
+            <div class="content-header-left col-md-9 col-12 mb-2">
+                <div class="row breadcrumbs-top">
+                    <div class="col-12">
+                        <h2 class="content-header-title float-start mb-0"><?php echo html_escape(trans("search")); ?>: <?php echo html_escape($q); ?></h2>
+                        <div class="breadcrumb-wrapper">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="<?php echo lang_base_url(); ?>"><?php echo html_escape(trans("home")); ?></a>
+                                </li>
+                                <li class="breadcrumb-item active"><?php echo html_escape(trans("search")); ?></li>
+                                <li class="breadcrumb-item active"><?php echo html_escape($q); ?></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="page-content">
-                <div class="col-xs-12 col-sm-12 col-md-8">
+            <div class="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
+                <div class="mb-1 breadcrumb-right">
 
-                    <div class="content">
-                        <h1 class="page-title"> <?php echo html_escape(trans("search")); ?>
-                            : <?php echo html_escape($q); ?></h1>
+                </div>
+            </div>
+<!-- Section: main -->
+            <div class="content-body">
+                <div class="content-detached">
+                    <div class="content-body">
+                        <!-- Blog List -->
+                        <div class="blog-list-wrapper">
 
                         <!-- posts -->
                         <div class="col-xs-12 col-sm-12 posts <?php echo ($layout == "layout_3" || $layout == "layout_6") ? 'p-0 posts-boxed' : ''; ?>">
-                            <div class="row">
+                            <div class="row match-height">
 
                                 <?php $count = 0; ?>
 
                                 <?php foreach ($posts as $item): ?>
 
-                                    <?php if ($count != 0 && $count % 2 == 0): ?>
+                                    <?php if ($count != 0 && $count % 3 == 0): ?>
                                         <div class="col-sm-12 col-xs-12"></div>
                                     <?php endif; ?>
 
@@ -50,7 +62,10 @@
                                 <?php endforeach; ?>
 
                                 <?php if ($post_count < 1): ?>
-                                    <p class="text-center"><?php echo html_escape(trans("search_noresult")); ?></p>
+                                    <div class="w-100 text-center">
+                                    <h2 class=""><?php echo html_escape(trans("search_noresult")); ?></h2> <br>
+                                    <img class="img-fluid" style="zoom: 50%" src="<?php echo base_url(); ?>v2/app-assets/images/pages/under-maintenance.svg" alt="Under maintenance page" />
+                                    </div>
                                 <?php endif; ?>
 
 
@@ -74,14 +89,13 @@
 
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4">
-                    <!--Sidebar-->
-                    <?php $this->load->view('partials/_sidebar'); ?>
-                </div><!--/col-->
+
 
             </div>
         </div>
     </div>
-</section>
+    </div>
+</div>
+
 <!-- /.Section: main -->
 

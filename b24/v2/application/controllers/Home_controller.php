@@ -683,9 +683,9 @@ class Home_controller extends Home_Core_Controller
 		$data['description'] = "Error 404";
 		$data['keywords'] = "error, 404";
 
-		$this->load->view('partials/_header', $data);
+		// $this->load->view('partials/_header', $data);
 		$this->load->view('errors/error_404');
-		$this->load->view('partials/_footer');
+		// $this->load->view('partials/_footer');
 	}
 
 
