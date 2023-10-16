@@ -189,11 +189,12 @@ if ($language->id == $site_lang->id):?>
                     <a class="dropdown-item" href="<?php echo admin_url(); ?>"><i class="me-50" data-feather="shield"></i> <?php echo html_escape(trans("admin_panel")); ?></a>
                     <?php endif; ?>
                     <a class="dropdown-item" href="<?php echo lang_base_url(); ?>profile/<?php echo $this->auth_user->slug; ?>"><i class="me-50" data-feather="user"></i> <?php echo html_escape(trans("profile")); ?></a>
-                    <a class="dropdown-item" href="<?php echo lang_base_url(); ?>reading-list"><i class="me-50" data-feather="message-square"></i> <?php echo html_escape(trans("reading_list")); ?></a>
+<!--                    <a class="dropdown-item" href="--><?php //echo lang_base_url(); ?><!--reading-list"><i class="me-50" data-feather="message-square"></i> --><?php //echo html_escape(trans("reading_list")); ?><!--</a>-->
 
-                    <div class="dropdown-divider"></div>
+<!--                    <div class="dropdown-divider"></div>-->
 
                     <a class="dropdown-item" href="<?php echo lang_base_url(); ?>settings"><i class="me-50" data-feather="settings"></i> <?php echo html_escape(trans("settings")); ?></a>
+                    <a class="dropdown-item" target="_blank" href="https://boec.edu.az.umanage.az"><i class="me-50" data-feather="external-link"></i> U-BOEC </a>
                     <a class="dropdown-item" href="<?php echo lang_base_url(); ?>logout"><i class="me-50" data-feather="power"></i> <?php echo trans("logout"); ?></a>
                 </div>
             </li>
