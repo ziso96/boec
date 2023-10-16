@@ -23,9 +23,9 @@
                                 </p>
                                 <a href="https://boec.edu.az.umanage.az" target="_blank" type="button" class="btn btn-outline-primary waves-effect me-1 mb-1" title="Elektron kollec sistemi">U-BOEC</a>
                                 <button type="button" class="btn btn-outline-primary waves-effect me-1 mb-1" data-bs-target="#large" data-bs-toggle="modal" title="Elektron kollec sistemi üçün təlimatlar">Təlimat</button>
-                                <button type="button" class="btn btn-outline-primary waves-effect me-1 mb-1"title="Kollecdaxili qaydalar">Qaydalar</button>
-                                <button type="button" class="btn btn-outline-primary waves-effect me-1 mb-1"title="Qəbul olmaq istəyənlər üçün məlumat kitabçası">Tələbə qəbulu</button>
-                                <button type="button" class="btn btn-outline-primary waves-effect me-1 mb-1"title="Bizi seçməyin üstünlükləri">Niyə biz?</button>
+                                <a href="<?php echo base_url(); ?>qaydalar" type="button" class="btn btn-outline-primary waves-effect me-1 mb-1"title="Kollecdaxili qaydalar">Qaydalar</a>
+                                <a href="<?php echo base_url(); ?>telebeqebulu" type="button" class="btn btn-outline-primary waves-effect me-1 mb-1"title="Qəbul olmaq istəyənlər üçün məlumat kitabçası">Tələbə qəbulu</a>
+                                <a href="<?php echo base_url(); ?>niyebiz" type="button" class="btn btn-outline-primary waves-effect me-1 mb-1"title="Bizi seçməyin üstünlükləri">Niyə biz?</a>
                             </div>
 
 
@@ -98,7 +98,7 @@
                     <div class="col-md-4 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">
+<!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
 
                                 <div class="card-body text-center">
                                     <h2><span class="badge badge-glow bg-primary"><?php echo $characters->all_student_count; ?></span> tələbə</h2>
@@ -112,7 +112,7 @@
                     <div class="col-md-4 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">
+<!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
                                     <h2><span class="badge badge-glow bg-info"><?php echo $characters->male_std_count; ?></span> tələbə oğlan</h2>
 
@@ -125,7 +125,7 @@
                     <div class="col-md-4 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">
+<!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
                                     <h2><span class="badge badge-glow bg-danger"><?php echo $characters->female_std_count; ?></span> tələbə qız</h2>
 
@@ -137,9 +137,9 @@
                     <div class="col-md-3 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">
+<!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
-                                    <h2><span class="badge badge-glow bg-dark"><?php echo $characters->specialty_count; ?></span>  aktiv ixtisas</h2>
+                                    <h2><span style="box-shadow: 0px 0px 10px #82868b;" class="badge badge-glow bg-linkedin"><?php echo $characters->specialty_count; ?></span>  aktiv ixtisas</h2>
 
                                 </div>
                             </a>
@@ -149,9 +149,9 @@
                     <div class="col-md-3 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">
+<!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
-                                    <h2><span class="badge badge-glow bg-dark"><?php echo $characters->group_count; ?></span>  aktiv qrup</h2>
+                                    <h2><span style="box-shadow: 0px 0px 10px #82868b;" class="badge badge-glow bg-adn"><?php echo $characters->group_count; ?></span>  aktiv qrup</h2>
 
                                 </div>
                             </a>
@@ -162,9 +162,9 @@
                     <div class="col-md-3 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">
+<!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
-                                    <h2><span class="badge badge-glow bg-dark"><?php echo $characters->lesson_count; ?> </span> aktiv fənn</h2>
+                                    <h2><span class="badge badge-glow bg-success"><?php echo $characters->lesson_count; ?> </span> aktiv fənn</h2>
 
                                 </div>
                             </a>
@@ -173,9 +173,9 @@
                     <div class="col-md-3 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">
+<!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
-                                    <h2><span class="badge badge-glow bg-dark"><?php echo $characters->all_teacher_count; ?></span>  müəllim</h2>
+                                    <h2><span class="badge badge-glow bg-warning"><?php echo $characters->all_teacher_count; ?></span>  müəllim</h2>
 
                                 </div>
                             </a>

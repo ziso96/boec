@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="<?php echo xss_clean($keywords); ?>"/>
-    <meta name="author" content="Z!SO-ZİSO-ZISO-ziso"/>
+    <meta name="keywords" content="u-manage layihəsi olan u-boec - kolleclər, universitetlər və eləcə də məktəblər üçün elektron təhsil - jurnal sistemi kimi funksional bir platformadır. Yararlanmaqda fayda var..."/>
+    <meta name="author" content="u-manage, u-boec, elektron jurnal, e-jurnal, elektron təhsil, e-təhsil"/>
     <title><?php // echo xss_clean($title); ?>  <?php echo xss_clean($settings->site_title); ?></title>
     <link rel="apple-touch-icon" href="<?php echo base_url(); ?>v2/app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>v2/app-assets/images/ico/favicon.ico">
