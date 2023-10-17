@@ -66,7 +66,7 @@
                 </p>
                 <hr />
                 <div class="d-flex justify-content-between align-items-center">
-                    <a href="page-blog-detail.html#blogComment">
+                    <a href="#">
                         <div class="d-flex align-items-center">
                             <i data-feather="eye" class="font-medium-1 text-body me-50"></i>
                             <span class="text-body fw-bold me-2"><?php echo $item->hit; ?></span>
