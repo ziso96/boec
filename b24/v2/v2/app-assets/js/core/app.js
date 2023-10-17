@@ -989,8 +989,8 @@ window.colors = {
 
     // ToDo: Customizer fix
     $('.horizontal-menu .header-navbar.navbar-fixed').css({
-      background: 'inherit',
-      'box-shadow': 'inherit'
+      // background: 'inherit',
+      // 'box-shadow': 'inherit'
     });
     $('.horizontal-menu .horizontal-menu-wrapper.header-navbar').css('background', 'inherit');
   });
