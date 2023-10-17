@@ -204,7 +204,8 @@
 
 
 
-
+                            <!--Include Widget Comments-->
+                            <?php $this->load->view('partials/_sidebar_widget_polls'); ?>
 
 		<!-- posts -->
 					<div class="col-xs-12 col-sm-12  <?php echo ($layout == "layout_3" || $layout == "layout_6") ? '' : ''; ?>">
@@ -216,6 +217,7 @@
 								<?php if ($count != 0 && $count % 2 == 0): ?>
 
 								<?php endif; ?>
+
 
 								<!-- post item -->
 								<?php $this->load->view('post/_post_item', ['item' => $item]); ?>
