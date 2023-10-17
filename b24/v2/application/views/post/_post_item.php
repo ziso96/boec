@@ -70,8 +70,8 @@
                         <div class="d-flex align-items-center">
                             <i data-feather="eye" class="font-medium-1 text-body me-50"></i>
                             <span class="text-body fw-bold me-2"><?php echo $item->hit; ?></span>
-                            <i data-feather="message-square" class="font-medium-1 text-body me-50"></i>
-                            <span class="text-body fw-bold"><?php echo helper_get_comment_count($item->id); ?> <?php echo html_escape(trans("comment")); ?></span>
+<!--                            <i data-feather="message-square" class="font-medium-1 text-body me-50"></i>-->
+<!--                            <span class="text-body fw-bold">--><?php //echo helper_get_comment_count($item->id); ?><!-- --><?php //echo html_escape(trans("comment")); ?><!--</span>-->
                         </div>
                     </a>
                     <a href="<?php echo generate_post_url($item); ?>" class="fw-bold"><?php echo html_escape(trans("readmore")); ?></a>

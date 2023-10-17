@@ -125,16 +125,16 @@
                                                     <div class="text-body align-middle"> <?php echo helper_date_format($post->created_at); ?></div>
                                                 </a>
                                             </div>
-                                            <?php if ($general_settings->comment_system == 1) : ?>
-                                            <div class="d-flex align-items-center me-1">
-                                                <a href="#" class="me-50">
-                                                    <i data-feather="message-square" class="font-medium-5 text-body align-middle"></i>
-                                                </a>
-                                                <a href="#">
-                                                    <div class="text-body align-middle"> <?php echo helper_get_comment_count($post->id); ?></div>
-                                                </a>
-                                            </div>
-                                            <?php endif; ?>
+<!--                                            --><?php //if ($general_settings->comment_system == 1) : ?>
+<!--                                            <div class="d-flex align-items-center me-1">-->
+<!--                                                <a href="#" class="me-50">-->
+<!--                                                    <i data-feather="message-square" class="font-medium-5 text-body align-middle"></i>-->
+<!--                                                </a>-->
+<!--                                                <a href="#">-->
+<!--                                                    <div class="text-body align-middle"> --><?php //echo helper_get_comment_count($post->id); ?><!--</div>-->
+<!--                                                </a>-->
+<!--                                            </div>-->
+<!--                                            --><?php //endif; ?>
                                             <?php if ($general_settings->show_pageviews == 1) : ?>
                                             <div class="d-flex align-items-center">
                                                 <a href="#" class="me-50">
