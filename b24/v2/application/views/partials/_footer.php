@@ -83,6 +83,7 @@ endif; ?>
 <script src="<?php echo base_url(); ?>v2/app-assets/js/core/app.js"></script>
 <script src="<?php echo base_url(); ?>v2/app-assets/vendors/js/ui/jquery.sticky.js"></script>
 <script src="<?php echo base_url(); ?>v2/app-assets/js/scripts/components/components-modals.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/script-3.9.min.js"></script>
 <!-- END: Theme JS-->
 
 <!-- BEGIN: Page JS-->

@@ -47,51 +47,51 @@
                             <div class="card">
 
                                 <div class="card-body">
-                                    <!-- <div class="row">
+                                    <div class="row">
                                         <div class="col-xl-12 col-md-12 col-12">
-                                            <h2 class="contact-leave-message"><?php // echo trans("leave_message"); ?></h2>
+                                            <h2 class="contact-leave-message"><?php  echo trans("leave_message"); ?></h2>
 
                                             <?php $this->load->view('partials/_messages'); ?>
 
                                             <!-- form start -->
                                             <?php echo form_open('home_controller/contact_post', ['id' => 'form_validate', 'class' => 'validate_terms']); ?>
 
-                                    <!--      <div class="mb-1">
-                                                <label class="form-label" for="basicInput"><?php // echo trans("name"); ?></label>
-                                                <input type="text" class="form-control" id="basicInput" name="name" placeholder="<?php // echo trans("name"); ?>" maxlength="199" minlength="1"
-                                                       pattern=".*\S+.*" value="<?php // echo old('name'); ?>" required <?php // echo ($rtl == true) ? 'dir="rtl"' : ''; ?>>
+                                          <div class="mb-1">
+                                                <label class="form-label" for="basicInput"><?php  echo trans("name"); ?></label>
+                                                <input type="text" class="form-control" id="basicInput" name="name" placeholder="<?php  echo trans("name"); ?>" maxlength="199" minlength="1"
+                                                       pattern=".*\S+.*" value="<?php  echo old('name'); ?>" required <?php  echo ($rtl == true) ? 'dir="rtl"' : ''; ?>>
                                             </div>
                                             <div class="mb-1">
-                                                <label class="form-label" for="basicInput"><?php // echo trans("email"); ?></label>
-                                                <input type="text" class="form-control" id="basicInput"  name="email" maxlength="199"
-                                                       placeholder="<?php // echo trans("email"); ?>"
-                                                       value="<?php // echo old('email'); ?>" required <?php // echo ($rtl == true) ? 'dir="rtl"' : ''; ?>>
+                                                <label class="form-label" for="basicInput"><?php  echo trans("email"); ?></label>
+                                                <input type="email" class="form-control" id="basicInput"  name="email" maxlength="199"
+                                                       placeholder="<?php  echo trans("email"); ?>"
+                                                       value="<?php  echo old('email'); ?>" required <?php  echo ($rtl == true) ? 'dir="rtl"' : ''; ?>>
                                             </div>
                                             <div class="mb-1">
-                                                <label class="form-label" for="exampleFormControlTextarea1"><?php // echo trans("message"); ?></label>
+                                                <label class="form-label" for="exampleFormControlTextarea1"><?php  echo trans("message"); ?></label>
                                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"
-                                                          placeholder="<?php // echo trans("message"); ?>" maxlength="4970"
+                                                          placeholder="<?php echo trans("message"); ?>" maxlength="4970"
                                                           minlength="5"
-                                                          required <?php // echo ($rtl == true) ? 'dir="rtl"' : ''; ?>><?php // echo old('message'); ?></textarea>
+                                                          required <?php echo ($rtl == true) ? 'dir="rtl"' : ''; ?>><?php  echo old('message'); ?></textarea>
                                             </div>
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="unchecked" required>
                                                 <label class="form-check-label" for="inlineCheckbox2">
-                                                    <a href="<?php // echo lang_base_url(); ?>terms-conditions" class="link-terms" target="_blank"><strong><?php // echo trans("terms_conditions"); ?> </strong></a> | <?php // echo trans("terms_conditions_exp"); ?>&nbsp;
+                                                    <a href="<?php echo lang_base_url(); ?>terms-conditions" class="link-terms" target="_blank"><strong><?php echo trans("terms_conditions"); ?> </strong></a> | <?php  echo trans("terms_conditions_exp"); ?>&nbsp;
                                                 </label>
                                             </div>
-                                            <?php // generate_recaptcha(); ?>
+                                            <?php  generate_recaptcha(); ?>
 
                                             <div class="demo-inline-spacing">
                                                 <button type="submit" class="btn btn-primary waves-effect waves-float waves-light">
 
-                                                    <?php // echo html_escape(trans("submit")); ?>
+                                                    <?php echo html_escape(trans("submit")); ?>
 
                                                 </button>
                                             </div>
                                            </form>
                                         </div>
-                                    </div> -->
+                                    </div>
 
                                     <hr class="my-2" />
                                 <div class="row">
