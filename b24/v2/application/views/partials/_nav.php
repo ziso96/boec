@@ -4,7 +4,7 @@
 <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation">
     <li class="nav-item <?php echo ($active_page == 'index' || $active_page == "") ? 'active' : ''; ?>" ">
     <a class="nav-link d-flex align-items-center" href="<?php echo lang_base_url(); ?>" >
-        <i data-feather="home"></i><span><?php echo trans("home"); ?></span></a>
+        &nbsp;&nbsp;<i data-feather="home"></i><!-- <span><?php // echo trans("home"); ?></span> --></a>
     </li>
     <?php
     $total_items = 1;
