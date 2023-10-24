@@ -9,7 +9,7 @@
                 <div class="row breadcrumbs-top">
                     <div class="col-12">
 
-                            <h2 class="content-header-title float-start mb-0"><?php echo html_escape($user->role); ?> </h2>
+                            <h2 style="text-transform: capitalize;" class="content-header-title float-start mb-0"><?php echo html_escape($user->role); ?> </h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="<?php echo lang_base_url(); ?>"><?php echo html_escape(trans("home")); ?></a>
