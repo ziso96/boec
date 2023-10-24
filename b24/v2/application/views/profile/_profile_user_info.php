@@ -7,7 +7,7 @@
         </div>
         <div class="user-info text-center mb-50">
             <h4><?php echo html_escape($user->username); ?></h4>
-            <span class="badge bg-light-info"><?php echo html_escape($user->role); ?></span>
+            <span style="text-transform: capitalize;" class="badge bg-light-info"><?php echo html_escape($user->role); ?></span>
         </div>
 
         <div class="user-info text-center">
@@ -30,7 +30,7 @@
                 </li>
                 <li class="mb-75">
                     <span class="fw-bolder me-25"><?php echo html_escape(trans("role")); ?>:</span>
-                    <span class="badge bg-light-success"><?php echo html_escape($user->role); ?></span>
+                    <span style="text-transform: capitalize;" class="badge bg-light-success"><?php echo html_escape($user->role); ?></span>
                 </li><!--&nbsp;-->
                 <li class="mb-75">
                     <span class="fw-bolder me-25"><?php echo trans("member_since"); ?></span>
@@ -46,7 +46,7 @@
                 </li>
                 <li class="mb-75">
                     <span class="fw-bolder me-25"><?php echo trans("language"); ?>:</span>
-                    <span> - </span>
+                    <span> AZ </span>
                 </li>
                 <li class="mb-75">
                     <span class="fw-bolder me-25">Token:</span>

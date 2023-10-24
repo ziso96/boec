@@ -90,7 +90,7 @@ endif; ?>
 <script src="<?php echo base_url(); ?>v2/app-assets/js/scripts/extensions/ext-component-swiper.js"></script>
 <!-- BEGIN: Page JS-->
 <!-- END: Page JS-->
-
+<script src="<?php echo base_url(); ?>v2/app-assets/js/scripts/pages/page-account-settings-account.js"></script>
 <script>
     $(window).on('load', function() {
         if (feather) {

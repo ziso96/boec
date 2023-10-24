@@ -185,7 +185,7 @@ if ($language->id == $site_lang->id):?>
             <?php echo form_close(); ?>
             <?php if ($this->auth_check) : ?>
             <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder"><?php echo html_escape(character_limiter($this->auth_user->username, 20, '...')); ?></span><span class="user-status"><?php echo html_escape($user->role); ?></span></div><span class="avatar"><img class="round" src="<?php echo get_user_avatar($this->auth_user); ?>" alt="<?php echo html_escape($this->auth_user->username); ?>" height="40" width="40"><span class="avatar-status-online"></span></span>
+                    <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder"><?php echo html_escape(character_limiter($this->auth_user->username, 20, '...')); ?></span><span style="text-transform: capitalize;" class="user-status"><?php echo html_escape($this->auth_user->role); ?></span></div><span class="avatar"><img class="round" src="<?php echo get_user_avatar($this->auth_user); ?>" alt="<?php echo html_escape($this->auth_user->username); ?>" height="40" width="40"><span class="avatar-status-online"></span></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
                     <?php if (is_admin() || is_author()): ?>
@@ -204,7 +204,7 @@ if ($language->id == $site_lang->id):?>
             <?php else : ?>
             <?php if ($general_settings->registration_system == 1): ?>
 
-            <a href="https://boec.edu.az.umanage.az" target="_blank" type="button" class="btn btn-primary waves-effect">Daxil ol</a>
+            <a href="https://boec.edu.az.umanage.az" target="_blank" type="button" class="btn btn-primary waves-effect">U-BOEC</a>
            <!-- <a href="<?php // echo lang_base_url(); ?>login" type="button" class="btn btn-outline-success waves-effect me-1"><?php // echo html_escape(trans("login")); ?></a>
             <a href="<?php // echo lang_base_url(); ?>register" type="button" class="btn btn-outline-info waves-effect"><?php // echo html_escape(trans("register")); ?></a>
             -->
