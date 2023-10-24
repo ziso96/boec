@@ -13,7 +13,7 @@
         <div class="user-info text-center">
             <span class="badge bg-light-secondary"><?php echo html_escape($user->email); ?></span>
         </div>
-        <p>
+        <p class="mt-2">
            <?php echo html_escape($user->about_me); ?>
         </p>
 
