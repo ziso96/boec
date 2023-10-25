@@ -73,6 +73,7 @@
 
                 <div class="col-xl-8 col-lg-7 col-md-7 order-0 order-md-1">
                     <!-- User Pills -->
+                    <?php if ($this->auth_check) : ?>
                     <ul class="nav nav-pills mb-2">
                         <li class="nav-item">
                             <a class="nav-link " href="<?php echo lang_base_url(); ?>profile/<?php echo $this->auth_user->slug; ?>">
@@ -147,7 +148,7 @@
                                           </div>
                                           <div class="col-12 col-sm-6 mb-1">
                                               <label class="form-label" ><?php echo trans("phone"); ?></label>
-                                              <input type="text"  class="form-control form-input" value="" placeholder=" ">
+                                              <input type="text" name="phone" class="form-control form-input" value="<?php echo html_escape($user->phone); ?>" placeholder="<?php echo html_escape($user->phone); ?>">
                                           </div>
                                           <div class="col-12 col-sm-12 mb-1">
                                               <label class="form-label" ><?php echo trans("about_me"); ?></label>
@@ -193,6 +194,17 @@
                           </div>
 
                     </div>
+                    <?php else : ?>
+                        <?php if ($general_settings->registration_system == 1): ?>
+                    <div class="card">
+                        <div class="card-header border-bottom">
+                            <h4 class="card-title"><i data-feather="user" class="font-medium-3 me-50"></i> <?php echo html_escape(trans("update_profile")); ?></h4>
+                        </div>
+                        <div class="card-body py-2 my-25">
+                        </div>
+                    </div>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
                 <!--/ User Content -->
         </div>

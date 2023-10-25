@@ -73,6 +73,7 @@
 
                     <div class="col-xl-8 col-lg-7 col-md-7 order-0 order-md-1">
                         <!-- User Pills -->
+                        <?php if ($this->auth_check) : ?>
                         <ul class="nav nav-pills mb-2">
                             <li class="nav-item">
                                 <a class="nav-link active" href="<?php echo lang_base_url(); ?>profile/<?php echo $this->auth_user->slug; ?>">
@@ -119,16 +120,128 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--/ Congratulations Card -->
-
-                            <!-- Medal Card -->
-
-                            <!--/ Medal Card -->
                         </div>
+                        <?php else : ?>
+                        <?php if ($general_settings->registration_system == 1): ?>
+
+                            <?php endif; ?>
+                        <?php endif; ?>
                         <div class="card">
                             <h4 style="justify-content: normal;" class="card-header"> <i data-feather="user" class="font-medium-3 me-50"></i> <?php echo html_escape(trans("profile")); ?></h4>
+                        <div class="card-body py-2 my-25">
+                            <div class="row">
+                                <?php if (!empty($user->facebook_url)): ?>
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i style="zoom: 2; color: royalblue;" class="font-medium-5 me-50" data-feather='facebook'></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Facebook</p>
+                                            <span>
+                                                ..... <?php echo mb_strimwidth($user->facebook_url, 12, 0, "..."); ?>
+                                            </span>
+                                        </div>
+                                        <div class="mt-50 mt-sm-0">
+                                            <a href="<?php echo $user->facebook_url; ?>" target="_blank" type="button" class="btn btn-icon btn-outline-secondary waves-effect">
+                                                <i data-feather='link'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (!empty($user->instagram_url)): ?>
+                                    <div class="col-12 col-sm-6 d-flex mb-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="<?php echo base_url(); ?>v2/app-assets/images/icons/social/instagram.png" alt="instagram" class="me-1" height="44" width="44">
+                                        </div>
+
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Instagram</p>
+                                            <span>
+                                                ..... <?php echo mb_strimwidth($user->instagram_url, 12, 0, "..."); ?>
+                                            </span>
+                                        </div>
+                                        <div class="mt-50 mt-sm-0">
+                                            <a href="<?php echo $user->instagram_url; ?>" target="_blank" type="button" class="btn btn-icon btn-outline-secondary waves-effect">
+                                                <i data-feather='link'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (!empty($user->youtube_url)): ?>
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i  style="zoom: 2; color: red" class="font-medium-5 me-50" data-feather='youtube'></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Youtube</p>
+                                            ..... <?php echo mb_strimwidth($user->youtube_url, 12, 0, "..."); ?>
+                                            </span>
+                                        </div>
+                                        <div class="mt-50 mt-sm-0">
+                                            <a href="<?php echo $user->youtube_url; ?>" target="_blank" type="button" class="btn btn-icon btn-outline-secondary waves-effect">
+                                                <i data-feather='link'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (!empty($user->twitter_url)): ?>
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i  style="zoom: 2; color: #1DA1F2;" class="font-medium-5 me-50" data-feather='twitter'></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Twitter</p>
+                                            <span><?php echo $user->twitter_url; ?></span>
+                                        </div>
+                                        <div class="mt-50 mt-sm-0">
+                                            <a href="<?php echo $user->twitter_url; ?>" target="_blank" type="button" class="btn btn-icon btn-outline-secondary waves-effect">
+                                                <i data-feather='link'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (!empty($user->pinterest_url)): ?>
+                                    <div class="col-12 col-sm-6 d-flex mb-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="<?php echo base_url(); ?>v2/app-assets/images/icons/social/google.png" alt="instagram" class="me-1" height="38" width="38">
+                                        </div>
+
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Google</p>
+                                            <span><?php echo $user->pinterest_url; ?></span>
+                                        </div>
+                                        <div class="mt-50 mt-sm-0">
+                                            <a href="<?php echo $user->pinterest_url; ?>" target="_blank" type="button" class="btn btn-icon btn-outline-secondary waves-effect">
+                                                <i data-feather='link'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (!empty($user->linkedin_url)): ?>
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i  style="zoom: 2; color: #0077B5;" class="font-medium-5 me-50" data-feather="linkedin"></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Linkedin</p>
+                                            <span><?php echo $user->linkedin_url; ?></span>
+                                        </div>
+                                        <div class="mt-50 mt-sm-0">
+                                            <a href="<?php echo $user->linkedin_url; ?>" target="_blank" type="button" class="btn btn-icon btn-outline-secondary waves-effect">
+                                                <i data-feather='link'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (!empty($user->vk_url)): ?>
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i  style="zoom: 2;" class="font-medium-5 me-50" data-feather='globe'></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">WEB</p>
+                                            <span><?php echo $user->vk_url; ?></span>
+                                        </div>
+                                        <div class="mt-50 mt-sm-0">
+                                            <a href="<?php echo $user->vk_url; ?>" target="_blank" type="button" class="btn btn-icon btn-outline-secondary waves-effect">
+                                                <i data-feather='link'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
 
                         </div>
+
+
+
+
                     </div>
                     <!--/ User Content -->
                 </div>

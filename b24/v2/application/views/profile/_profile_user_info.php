@@ -42,7 +42,7 @@
                 </li>
                 <li class="mb-75">
                     <span class="fw-bolder me-25"><?php echo trans("phone"); ?>:</span>
-                    <span> - </span>
+                    <span> <?php echo html_escape($user->phone); ?> </span>
                 </li>
                 <li class="mb-75">
                     <span class="fw-bolder me-25"><?php echo trans("language"); ?>:</span>

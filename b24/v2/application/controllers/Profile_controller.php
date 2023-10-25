@@ -91,6 +91,7 @@ class Profile_controller extends Home_Core_Controller
 				'slug' => $this->input->post('slug', true),
 				'email' => $this->input->post('email', true),
 				'about_me' => $this->input->post('about_me', true),
+				'phone' => $this->input->post('phone', true),
 				'show_email_on_profile' => $this->input->post('show_email_on_profile', true)
 			);
 			//is email unique

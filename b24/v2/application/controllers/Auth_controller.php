@@ -204,9 +204,9 @@ class Auth_controller extends Home_Core_Controller
 		$data['description'] = trans("register") . " - " . $this->settings->application_name;
 		$data['keywords'] = trans("register") . "," . $this->settings->application_name;
 
-		$this->load->view('partials/_header', $data);
+		// $this->load->view('partials/_header', $data);
 		$this->load->view('auth/register');
-		$this->load->view('partials/_footer');
+		// $this->load->view('partials/_footer');
 	}
 
 	/**
