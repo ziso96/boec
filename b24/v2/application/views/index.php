@@ -230,11 +230,20 @@
 									<!-- increment count -->
 								<?php endif; ?>
 
-								<?php $count++; ?>
+								<?php $count++;
+                                if(++$count > 10) break;
+                                ?>
+
 							<?php endforeach; ?>
 						</div>
 					</div><!-- /.posts -->
+                            <div class="divider divider-primary">
+                                <div class="divider-text">
 
+                                    <a href="<?php echo base_url(); ?>boec" type="button" class="btn btn-outline-primary waves-effect"><?php echo html_escape(trans("more")); ?> <?php echo html_escape(trans("post")); ?> </a>
+
+                                </div>
+                            </div>
 					<div class="col-xs-12 col-sm-12 col-xs-12">
 						<div class="row">
 							<?php $this->load->view("partials/_ad_spaces", ["ad_space" => "index_bottom"]); ?>

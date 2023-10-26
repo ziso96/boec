@@ -127,7 +127,7 @@
                             <?php endif; ?>
                         <?php endif; ?>
                         <div class="card">
-                            <h4 style="justify-content: normal;" class="card-header"> <i data-feather="user" class="font-medium-3 me-50"></i> <?php echo html_escape(trans("profile")); ?></h4>
+                            <h4 style="justify-content: normal;" class="card-header"> <i data-feather="user" class="font-medium-3 me-50"></i> <?php echo html_escape(trans("profile")); ?> | <?php echo html_escape(trans("social_accounts")); ?>&nbsp; <i data-feather="link" class="font-medium-3 me-50"></i></h4>
                         <div class="card-body py-2 my-25">
                             <div class="row">
                                 <?php if (!empty($user->facebook_url)): ?>
@@ -168,7 +168,8 @@
                                     <div class="col-12 col-sm-6 d-flex mb-3"><i  style="zoom: 2; color: red" class="font-medium-5 me-50" data-feather='youtube'></i>
                                         <div class="me-1">
                                             <p class="fw-bolder mb-0">Youtube</p>
-                                            ..... <?php echo mb_strimwidth($user->youtube_url, 12, 0, "..."); ?>
+                                            <span>
+                                                ..... <?php echo mb_strimwidth($user->youtube_url, 12, 0, "..."); ?>
                                             </span>
                                         </div>
                                         <div class="mt-50 mt-sm-0">
@@ -233,6 +234,88 @@
                                             </a>
                                         </div>
                                     </div>
+                                <?php endif; ?>
+
+                                <?php if (empty($user->facebook_url) and empty($user->instagram_url) and empty($user->youtube_url) and empty($user->twitter_url) and empty($user->pinterest_url) and empty($user->linkedin_url) and empty($user->vk_url)): ?>
+
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i style="zoom: 2; color: royalblue;" class="font-medium-5 me-50" data-feather='facebook'></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Facebook</p>
+                                            <span>
+                                                Daxil edilməyib...
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 d-flex mb-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="<?php echo base_url(); ?>v2/app-assets/images/icons/social/instagram.png" alt="instagram" class="me-1" height="44" width="44">
+                                        </div>
+
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Instagram</p>
+                                            <span>
+                                                Daxil edilməyib...
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i  style="zoom: 2; color: red" class="font-medium-5 me-50" data-feather='youtube'></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Youtube</p>
+                                            <span>
+                                                Daxil edilməyib...
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i  style="zoom: 2; color: #1DA1F2;" class="font-medium-5 me-50" data-feather='twitter'></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Twitter</p>
+                                            <span>
+                                                Daxil edilməyib...
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 d-flex mb-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="<?php echo base_url(); ?>v2/app-assets/images/icons/social/google.png" alt="instagram" class="me-1" height="38" width="38">
+                                        </div>
+
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Google</p>
+                                            <span>
+                                                Daxil edilməyib...
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i  style="zoom: 2; color: #0077B5;" class="font-medium-5 me-50" data-feather="linkedin"></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">Linkedin</p>
+                                            <span>
+                                                Daxil edilməyib...
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 d-flex mb-3"><i  style="zoom: 2;" class="font-medium-5 me-50" data-feather='globe'></i>
+                                        <div class="me-1">
+                                            <p class="fw-bolder mb-0">WEB</p>
+                                            <span>
+                                                Daxil edilməyib...
+                                            </span>
+                                        </div>
+
+                                    </div>
+
                                 <?php endif; ?>
                             </div>
                         </div>

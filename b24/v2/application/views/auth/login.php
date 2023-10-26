@@ -90,28 +90,28 @@
                             <?php echo form_open('auth_controller/login_post'); ?>
                             <input type="hidden" name="redirect_url" value="<?php echo lang_base_url(); ?>">
 
-                            <?php if (!empty($general_settings->facebook_app_id)): ?>
-                                <a href="<?php echo base_url(); ?>connect-with-facebook" class="btn btn-social btn-social-facebook">
-                                    <i class="icon-facebook"></i>&nbsp;<?php echo trans("connect_with_facebook"); ?>
-                                </a>
-                            <?php endif; ?>
-                            <?php if (!empty($general_settings->google_client_id)): ?>
-                                <a href="<?php echo base_url(); ?>connect-with-google" class="btn btn-social btn-social-google">
-                                    <i class="icon-google"></i>&nbsp;<?php echo trans("connect_with_google"); ?>
-                                </a>
-                            <?php endif; ?>
-
-                            <?php if (!empty($general_settings->facebook_app_id) || !empty($general_settings->google_client_id)): ?>
-                                <p class="p-auth-modal-or">
-                                    <span><?php echo trans("or_login_with_email"); ?></span>
-                                </p>
-                            <?php endif; ?>
+<!--                            --><?php //if (!empty($general_settings->facebook_app_id)): ?>
+<!--                                <a href="--><?php //echo base_url(); ?><!--connect-with-facebook" class="btn btn-social btn-social-facebook">-->
+<!--                                    <i class="icon-facebook"></i>&nbsp;--><?php //echo trans("connect_with_facebook"); ?>
+<!--                                </a>-->
+<!--                            --><?php //endif; ?>
+<!--                            --><?php //if (!empty($general_settings->google_client_id)): ?>
+<!--                                <a href="--><?php //echo base_url(); ?><!--connect-with-google" class="btn btn-social btn-social-google">-->
+<!--                                    <i class="icon-google"></i>&nbsp;--><?php //echo trans("connect_with_google"); ?>
+<!--                                </a>-->
+<!--                            --><?php //endif; ?>
+<!---->
+<!--                            --><?php //if (!empty($general_settings->facebook_app_id) || !empty($general_settings->google_client_id)): ?>
+<!--                                <p class="p-auth-modal-or">-->
+<!--                                    <span>--><?php //echo trans("or_login_with_email"); ?><!--</span>-->
+<!--                                </p>-->
+<!--                            --><?php //endif; ?>
 
                             <!-- include message block -->
                             <?php $this->load->view('partials/_messages'); ?>
 
 
-                            <form class="auth-login-form mt-2" action="index.html" method="POST">
+
                                 <div class="mb-1">
 
                                     <label for="login-email" class="form-label"><?php echo trans("username_or_email"); ?></label>
@@ -127,7 +127,7 @@
                                         </a>
                                     </div>
                                     <div class="input-group input-group-merge form-password-toggle">
-                                        <input type="password" class="form-control form-control-merge" id="login-password" name="password" tabindex="2" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" value="<?php echo html_escape(old('password')); ?> required <?php echo ($rtl == true) ? 'dir="rtl"' : ''; ?> aria-describedby="login-password" />
+                                        <input type="password" class="form-control form-control-merge" id="login-password" name="password" tabindex="2" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" value="<?php echo html_escape(old('password')); ?>" required <?php echo ($rtl == true) ? 'dir="rtl"' : ''; ?> aria-describedby="login-password" />
                                         <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                                     -->
                                 </div>
                                 <button class="btn btn-primary w-100" tabindex="4"><?php echo html_escape(trans("login")); ?></button>
-                            </form>
+
                             <!--
                                                         <p class="text-center mt-2">
                                                             <span>New on our platform?</span>

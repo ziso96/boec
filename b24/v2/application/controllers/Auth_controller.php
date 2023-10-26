@@ -283,9 +283,9 @@ class Auth_controller extends Home_Core_Controller
 		$data['description'] = trans("forgot_password") . " - " . $this->settings->application_name;
 		$data['keywords'] = trans("forgot_password") . "," . $this->settings->application_name;
 
-		$this->load->view('partials/_header', $data);
+		//$this->load->view('partials/_header', $data);
 		$this->load->view('auth/forgot_password');
-		$this->load->view('partials/_footer');
+		//$this->load->view('partials/_footer');
 	}
 
 

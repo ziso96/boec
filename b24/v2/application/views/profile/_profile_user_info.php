@@ -6,8 +6,25 @@
         <img class="img-fluid rounded mt-3 mb-2" src="<?php echo get_user_avatar($user); ?>" alt="<?php echo html_escape($user->username); ?>"  height="200" width="200" alt="User avatar" />
         </div>
         <div class="user-info text-center mb-50">
+
             <h4><?php echo html_escape($user->username); ?></h4>
-            <span style="text-transform: capitalize;" class="badge bg-light-info"><?php echo html_escape($user->role); ?></span>
+        <?php if ($this->auth_check) : ?>
+            <?php if ($user->role == 'admin'):?>
+            <span style="text-transform: capitalize;" class="badge bg-light-success"><?php echo trans(html_escape($user->role)); ?></span>
+            <?php endif  ?>
+            <?php if ($user->role == 'author'):?>
+                <span style="text-transform: capitalize;" class="badge bg-light-warning"><?php echo trans(html_escape($user->role)); ?></span>
+            <?php endif  ?>
+            <?php if ($user->role == 'user'):?>
+                <span style="text-transform: capitalize;" class="badge bg-light-info"><?php echo trans(html_escape($user->role)); ?></span>
+            <?php endif  ?>
+
+        <?php else : ?>
+
+            <?php if ($general_settings->registration_system == 1): ?>
+            <span style="text-transform: capitalize;" class="badge bg-light-secondary"><?php echo html_escape($user->role); ?></span>
+            <?php endif  ?>
+        <?php endif  ?>
         </div>
 
         <div class="user-info text-center">
@@ -30,8 +47,27 @@
                 </li>
                 <li class="mb-75">
                     <span class="fw-bolder me-25"><?php echo html_escape(trans("role")); ?>:</span>
-                    <span style="text-transform: capitalize;" class="badge bg-light-success"><?php echo html_escape($user->role); ?></span>
-                </li><!--&nbsp;-->
+
+                    <?php if ($this->auth_check) : ?>
+
+                        <?php if ($user->role == 'admin'):?>
+                            <span style="text-transform: capitalize;" class="badge bg-light-success"><?php echo trans(html_escape($user->role)); ?></span>
+                        <?php endif  ?>
+                        <?php if ($user->role == 'author'):?>
+                            <span style="text-transform: capitalize;" class="badge bg-light-warning"><?php echo trans(html_escape($user->role)); ?></span>
+                        <?php endif  ?>
+                        <?php if ($user->role == 'user'):?>
+                            <span style="text-transform: capitalize;" class="badge bg-light-info"><?php echo trans(html_escape($user->role)); ?></span>
+                        <?php endif  ?>
+
+                    <?php else : ?>
+
+                        <?php if ($general_settings->registration_system == 1): ?>
+                            <span style="text-transform: capitalize;" class="badge bg-light-secondary"><?php echo html_escape($user->role); ?></span>
+                        <?php endif  ?>
+                    <?php endif  ?>
+
+                    </li><!--&nbsp;-->
                 <li class="mb-75">
                     <span class="fw-bolder me-25"><?php echo trans("member_since"); ?></span>
                     <span><?php echo helper_date_format($user->created_at); ?></span>

@@ -5,7 +5,7 @@
     <div class="demo-spacing-0">
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <div class="alert-body d-flex align-items-center">
-                <i data-feather='x'></i> <?php echo $this->session->flashdata('errors'); ?>
+                <i class="me-1" data-feather='x'></i> <?php echo $this->session->flashdata('errors'); ?>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -17,7 +17,7 @@
     <div class="demo-spacing-0">
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
             <div class="alert-body d-flex align-items-center">
-                <i data-feather='alert-triangle'></i> <?php echo $this->session->flashdata('error'); ?>
+                <i class="me-1" data-feather='alert-triangle'></i> <?php echo $this->session->flashdata('error'); ?>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -29,7 +29,7 @@
     <div class="demo-spacing-0">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <div class="alert-body d-flex align-items-center">
-                <i data-feather='check'></i> <?php echo $this->session->flashdata('success'); ?>
+                <i class="me-1" data-feather='check'></i> <?php echo $this->session->flashdata('success'); ?>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>

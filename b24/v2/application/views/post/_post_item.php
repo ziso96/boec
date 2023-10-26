@@ -37,7 +37,7 @@
 
 <?php elseif ($layout == "layout_3" || $layout == "layout_6"): ?>
 
-    <div class="col-md-4 col-12">
+    <div class="col-md-4 col-sm-6 col-12">
         <div class="card">
             <a href="<?php echo generate_post_url($item); ?>">
                 <?php $this->load->view("post/_post_image", ['post_item' => $item, 'type' => 'image_slider']); ?>
@@ -122,11 +122,17 @@
 					</a>
 				</div>
 
+
+
+
 			</div><!-- /.post footer -->
 		</div><!-- /.row -->
 	</div>
 
+
 <?php endif; ?>
+
+
 
 
 
