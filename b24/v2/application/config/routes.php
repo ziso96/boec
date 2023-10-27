@@ -63,6 +63,7 @@ $route['error-404'] = 'home_controller/error_404';
 $route['gallery'] = 'home_controller/gallery';
 $route['gallery/album/(:num)'] = 'home_controller/gallery_album/$1';
 $route['contact'] = 'home_controller/contact';
+$route['niyebiz'] = 'home_controller/niyebiz';
 $route['profile/(:any)'] = 'profile_controller/profile/$1';
 $route['tag/(:any)'] = 'home_controller/tag/$1';
 $route['reading-list'] = 'home_controller/reading_list';
@@ -190,6 +191,7 @@ foreach ($languages as $language) {
 		$route[$key . '/gallery'] = 'home_controller/gallery';
 		$route[$key . '/gallery/album/(:num)'] = 'home_controller/gallery_album/$1';
 		$route[$key . '/contact'] = 'home_controller/contact';
+		$route[$key . '/niyebiz'] = 'home_controller/niyebiz';
 		$route[$key . '/profile/(:any)'] = 'profile_controller/profile/$1';
 		$route[$key . '/tag/(:any)'] = 'home_controller/tag/$1';
 		$route[$key . '/reading-list'] = 'home_controller/reading_list';
