@@ -133,6 +133,29 @@
                             </a>
                         </div>
                     </div>
+                    <div class="col-md-6 col-sm-6 col-12 kb-search-content">
+                        <div class="card">
+                            <a href="#">
+                                <!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
+                                <div class="card-body text-center">
+                                    <h2><span style="box-shadow: 0px 0px 10px #82868b;" class="badge badge-glow bg-bitbucket"><?php echo $characters->eyani_std_count; ?></span> Əyani tələbə</h2>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-12 kb-search-content">
+                        <div class="card">
+                            <a href="#">
+                                <!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
+                                <div class="card-body text-center">
+                                    <h2><span style="box-shadow: 0px 0px 10px #82868b;" class="badge badge-glow bg-reddit"><?php echo $characters->qiyabi_std_count; ?></span> Qiyabi tələbə</h2>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
                     <div class="col-md-3 col-sm-6 col-12 kb-search-content">
                         <div class="card">

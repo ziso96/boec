@@ -74,7 +74,7 @@
 <!--                            <span class="text-body fw-bold">--><?php //echo helper_get_comment_count($item->id); ?><!-- --><?php //echo html_escape(trans("comment")); ?><!--</span>-->
                         </div>
                     </a>
-                    <a href="<?php echo generate_post_url($item); ?>" class="fw-bold"><?php echo html_escape(trans("readmore")); ?></a>
+                    <a href="<?php echo generate_post_url($item); ?>" type="button" class="btn btn-sm btn-flat-primary waves-effect"><?php echo html_escape(trans("readmore")); ?></a>
                 </div>
             </div>
         </div>
