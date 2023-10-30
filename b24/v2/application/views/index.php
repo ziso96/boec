@@ -254,30 +254,48 @@
 								<?php endif; ?>
 
 								<?php $count++;
-                                if(++$count > 10) break;
+
                                 ?>
 
 							<?php endforeach; ?>
 						</div>
 					</div><!-- /.posts -->
-                            <div class="divider divider-primary">
-                                <div class="divider-text">
-
-                                    <a href="<?php echo base_url(); ?>boec" type="button" class="btn btn-outline-primary waves-effect"><?php echo html_escape(trans("more")); ?> <?php echo html_escape(trans("post")); ?> </a>
-
-                                </div>
-                            </div>
+<!--                            <div class="divider divider-primary">-->
+<!--                                <div class="divider-text">-->
+<!---->
+<!--                                    <a href="--><?php //echo base_url(); ?><!--boec" type="button" class="btn btn-outline-primary waves-effect">--><?php //echo html_escape(trans("more")); ?><!-- --><?php //echo html_escape(trans("post")); ?><!-- </a>-->
+<!---->
+<!--                                </div>-->
+<!--                            </div>-->
 					<div class="col-xs-12 col-sm-12 col-xs-12">
 						<div class="row">
 							<?php $this->load->view("partials/_ad_spaces", ["ad_space" => "index_bottom"]); ?>
 						</div>
 					</div>
 
-					<div class="col-xs-12 col-sm-12 col-xs-12">
-						<div class="row">
+                            <div class="col-xs-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                <div class="card-body">
 							<?php echo $this->pagination->create_links(); ?>
-						</div>
-					</div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination mt-2">
+                                    <li class="page-item prev"><a class="page-link" href="#"></a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                    <li class="page-item next"><a class="page-link" href="#"></a></li>
+                                </ul>
+                            </nav>
 
 				</div>
 
@@ -294,8 +312,8 @@
         <!--/ Blog List Items -->
 
         <!-- Pagination -->
-
-
+        <script src="<?php echo base_url(); ?>v2/app-assets/js/scripts/pagination/components-pagination.js"></script>
+        <script src="<?php echo base_url(); ?>v2/app-assets/vendors/js/pagination/jquery.twbsPagination.min.js"></script>
         <!--/ Pagination -->
     </div>
     <!--/ Blog List -->

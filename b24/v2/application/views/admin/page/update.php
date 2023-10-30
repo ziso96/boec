@@ -182,7 +182,7 @@
 					</div>
 				</div>
 
-				<?php if ($page->slug != "gallery" && $page->slug != "contact" && $page->slug != "niyebiz"): ?>
+				<?php if ($page->slug != "gallery" && $page->slug != "contact"): ?>
 					<div class="form-group">
 						<div class="row">
 							<div class="col-sm-12">
