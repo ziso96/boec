@@ -85,6 +85,7 @@ if ($language->id == $site_lang->id):?>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>v2/app-assets/css/plugins/extensions/ext-component-swiper.css">
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>v2/app-assets/vendors/css/extensions/swiper.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>v2/app-assets/css/pages/page-profile.css">
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>v2/assets/css/style.css">

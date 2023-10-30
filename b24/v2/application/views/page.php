@@ -43,10 +43,16 @@
                     <div class="row">
                         <!-- Blog -->
                         <div class="col-12">
-                            <div class="card">
-
+                            <div class="card ">
                                 <div class="card-body">
+
+                                    <?php if ($page->is_custom == 2): ?>
+                                    <div class="  ">
+                                        <div class=" ">
+                                            <?php endif; ?>
+
                                         <?php echo $page->page_content; ?>
+
                                     <hr class="my-2" />
                                     <!-- <div class="d-flex align-items-center justify-content-between">
                                         <div class="d-flex align-items-center">

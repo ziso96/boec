@@ -101,6 +101,8 @@ endif; ?>
         }
     })
 </script>
+<script src="<?php echo base_url(); ?>v2/app-assets/vendors/js/ui/jquery.sticky.js"></script>
+<script src="<?php echo base_url(); ?>v2/app-assets/js/scripts/pages/page-profile.js"></script>
 
 
 </body>
