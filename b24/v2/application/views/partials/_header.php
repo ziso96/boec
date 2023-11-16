@@ -77,6 +77,7 @@ if ($language->id == $site_lang->id):?>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>v2/app-assets/css/themes/bordered-layout.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>v2/app-assets/css/themes/semi-dark-layout.css">
 
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>v2/app-assets/vendors/css/extensions/swiper.min.css">
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>v2/app-assets/css/core/menu/menu-types/horizontal-menu.css">
 
@@ -84,7 +85,7 @@ if ($language->id == $site_lang->id):?>
     <!-- END: Page CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>v2/app-assets/css/plugins/extensions/ext-component-swiper.css">
 
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>v2/app-assets/vendors/css/extensions/swiper.min.css">
+<!--    <link rel="stylesheet" type="text/css" href="--><?php //echo base_url(); ?><!--v2/app-assets/vendors/css/extensions/swiper.min.css">-->
     <link rel="stylesheet" href="<?php echo base_url(); ?>v2/app-assets/css/pages/page-profile.css">
 
     <!-- BEGIN: Custom CSS-->

@@ -88,6 +88,8 @@ endif; ?>
 
 <script src="<?php echo base_url(); ?>v2/app-assets/vendors/js/extensions/swiper.min.js"></script>
 <script src="<?php echo base_url(); ?>v2/app-assets/js/scripts/extensions/ext-component-swiper.js"></script>
+<script src="<?php echo base_url(); ?>v2/app-assets/vendors/js/extensions/swiper.min.js"></script>
+
 <!-- BEGIN: Page JS-->
 <!-- END: Page JS-->
 <script src="<?php echo base_url(); ?>v2/app-assets/js/scripts/pages/page-account-settings-account.js"></script>

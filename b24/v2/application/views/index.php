@@ -86,6 +86,64 @@
                     </div>
                 </div>
             </section>
+
+
+            <section id="component-swiper-parallax">
+                <div class="card ">
+
+                    <div class=" ">
+                        <!-- Swiper -->
+                        <div class="swiper-parallax swiper-container">
+                            <div class="parallax-bg" data-swiper-parallax="-23%">
+                                <img class="img-fluid" src="<?php echo base_url(); ?>v2/app-assets/images/banner/parallax-4.jpg" alt="banner" />
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+
+                                    <div class="subtitle" data-swiper-parallax="-200"> </div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        <p class="card-text">
+                                            Bu təhsil sisteminin nə qədər dəyərli olduğunu ondan görmək olar ki, Azərbaycanda yüksək savada, biliyə, <br>
+                                            ixtisasa, yüksək elmə malik insanlar var və onlar cəmiyyətin çox hissəsini təşkil edir. Əgər bunlar olmasaydı, <br>
+                                            Azərbaycanın iqtisadiyyatı belə güclü inkişaf edə bilməzdi. Bunlar olmasaydı, Azərbaycan elmi inkişaf edə <br> bilməzdi.
+                                            Bunlar olmasaydı, biz indi Azərbaycanı müstəqil dövlət kimi idarə edə bilməzdik. <br>
+                                            Onları qiymətləndirmək lazımdır və on illərlə əldə etdiyimiz nailiyyəti heç vaxt unutmamalıyıq.
+                                        </p>
+                                    </div><br>
+                                    <div class="title" data-swiper-parallax="-300">ULU ÖNDƏR HEYDƏR ƏLİYEV</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="subtitle" data-swiper-parallax="-200"> </div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        <p class="card-text">
+                                            Təhsilimizin məqsədi gənc nəslə, uşaqlara təhsil verib onları gələcəyə hazırlamaqdır. <br> Hər bir insan gərək, eyni zamanda vətəndaş olsun. Mütləq vətəndaş olsun. <br> Dövlətinə sadiq, millətinə sadiq, ənənələrinə sadiq, xalqına sadiq vətəndaş olsun.
+                                        </p>
+                                    </div><br>
+                                    <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">ULU ÖNDƏR HEYDƏR ƏLİYEV</div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="subtitle" data-swiper-parallax="-200"> </div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        <p class="card-text">
+                                            Təhsil hər bir dövlətin, ölkənin, cəmiyyətin həyatının, <br> fəaliyyətinin mühüm bir sahəsidir. <br>  Cəmiyyət təhsilsiz inkişaf edə bilməz.
+                                        </p>
+                                    </div><br>
+                                    <div class="title" data-swiper-parallax="-300">ULU ÖNDƏR HEYDƏR ƏLİYEV</div>
+
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Navigation -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 <?php
             $url = 'https://boec.edu.az.umanage.az/api/statistics'; // path to your JSON file
             $data = file_get_contents($url); // put the contents of the file into a variable
@@ -209,9 +267,7 @@
 
 
                     <!-- no result -->
-                    <div class="col-12 text-center no-result no-items">
-                        <h4 class="mt-4">Search result not found!!</h4>
-                    </div>
+
                 </div>
             </section>
 
@@ -281,25 +337,56 @@
                                 </div>
                             </div>
 
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination mt-2">
-                                    <li class="page-item prev"><a class="page-link" href="#"></a></li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item active" aria-current="page">
-                                        <a class="page-link" href="#">4</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                    <li class="page-item next"><a class="page-link" href="#"></a></li>
-                                </ul>
-                            </nav>
+
 
 				</div>
 
 			</div>
+
+                    <section id="component-swiper-centered-slides">
+                        <div class="card bg-transparent shadow-none">
+
+                            <div class="card-body">
+                                <div class="swiper-centered-slides swiper-container p-1">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide rounded swiper-shadow">
+                                            <a href=""><img src="http://asoiu.edu.az/public/user/assets/img/tehsil.png"></a>
+<!--                                            <i data-feather="play" class="font-large-1"></i>-->
+<!--                                            <div class="swiper-text pt-md-1 pt-sm-50">Azərbaycan Respublikası Elm və Təhsil Nazirliyi</div>-->
+                                        </div>
+                                        <div class="swiper-slide rounded swiper-shadow">
+                                            <a href=""><img src="http://asoiu.edu.az/public/user/assets/img/tehsil.png"></a>
+                                            <!--                                            <i data-feather="play" class="font-large-1"></i>-->
+                                            <!--                                            <div class="swiper-text pt-md-1 pt-sm-50">Azərbaycan Respublikası Elm və Təhsil Nazirliyi</div>-->
+                                        </div>
+                                        <div class="swiper-slide rounded swiper-shadow">
+                                            <i data-feather="dollar-sign" class="font-large-1"></i>
+                                            <div class="swiper-text pt-md-1 pt-sm-50">Dövlət İmtahan Mərkəzi</div>
+                                        </div>
+                                        <div class="swiper-slide rounded swiper-shadow">
+                                            <i data-feather="dollar-sign" class="font-large-1"></i>
+                                            <div class="swiper-text pt-md-1 pt-sm-50">Dövlət İmtahan Mərkəzi</div>
+                                        </div>
+                                        <div class="swiper-slide rounded swiper-shadow">
+                                            <i data-feather="help-circle" class="font-large-1"></i>
+                                            <div class="swiper-text pt-md-1 pt-sm-50">ADNSU</div>
+                                        </div>
+                                        <div class="swiper-slide rounded swiper-shadow">
+                                            <i data-feather="file-text" class="font-large-1"></i>
+                                            <div class="swiper-text pt-md-1 pt-sm-50">Şirkət</div>
+                                        </div>
+                                        <div class="swiper-slide rounded swiper-shadow">
+                                            <i data-feather="archive" class="font-large-1"></i>
+                                            <div class="swiper-text pt-md-1 pt-sm-50">Şirkət</div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
 			<div class="col-xs-12 col-sm-12 col-md-4">
 				<!--Sidebar-->
