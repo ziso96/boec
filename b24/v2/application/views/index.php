@@ -9,7 +9,7 @@
 
 
 
-<!-- Section: main -->
+            <!-- Section: main -->
             <section id="knowledge-base-search">
                 <div class="row">
                     <div class="col-12">
@@ -66,7 +66,6 @@
                                                     <i data-feather="users" class="font-large-2 mb-1"></i>
                                                     <h5 class="card-title">Tələbələr üçün</h5>
                                                     <p class="card-text">Bu təlimat tələbə profilinin işləmə qaydalarını izah edir.</p>
-
                                                     <!-- modal trigger button -->
                                                     <a href="https://boec.edu.az.umanage.az/teacherv2/faq" type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#editUser">
                                                         BAX
@@ -144,11 +143,11 @@
             </section>
 
 
-<?php
+            <?php
             $url = 'https://boec.edu.az.umanage.az/api/statistics'; // path to your JSON file
             $data = file_get_contents($url); // put the contents of the file into a variable
             $characters = json_decode($data); // decode the JSON feed
-?>
+            ?>
 
             <section id="knowledge-base-content">
                 <div class="row kb-search-content-info match-height">
@@ -156,7 +155,7 @@
                     <div class="col-md-4 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-<!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
+                                <!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
 
                                 <div class="card-body text-center">
                                     <h2><span class="badge badge-glow bg-primary"><?php echo $characters->all_student_count; ?></span> tələbə</h2>
@@ -170,7 +169,7 @@
                     <div class="col-md-4 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-<!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
+                                <!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
                                     <h2><span class="badge badge-glow bg-info"><?php echo $characters->male_std_count; ?></span> tələbə oğlan</h2>
 
@@ -183,7 +182,7 @@
                     <div class="col-md-4 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-<!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
+                                <!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
                                     <h2><span class="badge badge-glow bg-danger"><?php echo $characters->female_std_count; ?></span> tələbə qız</h2>
 
@@ -218,7 +217,7 @@
                     <div class="col-md-3 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-<!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
+                                <!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
                                     <h2><span style="box-shadow: 0px 0px 10px #82868b;" class="badge badge-glow bg-linkedin"><?php echo $characters->specialty_count; ?></span>  aktiv ixtisas</h2>
 
@@ -230,7 +229,7 @@
                     <div class="col-md-3 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-<!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
+                                <!--                                <img src="v2/app-assets/images/illustration/sales.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
                                     <h2><span style="box-shadow: 0px 0px 10px #82868b;" class="badge badge-glow bg-adn"><?php echo $characters->group_count; ?></span>  aktiv qrup</h2>
 
@@ -243,7 +242,7 @@
                     <div class="col-md-3 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-<!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
+                                <!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
                                     <h2><span class="badge badge-glow bg-success"><?php echo $characters->lesson_count; ?> </span> aktiv fənn</h2>
 
@@ -254,7 +253,7 @@
                     <div class="col-md-3 col-sm-6 col-12 kb-search-content">
                         <div class="card">
                             <a href="#">
-<!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
+                                <!--                                <img src="v2/app-assets/images/illustration/marketing.svg" class="card-img-top" alt="knowledge-base-image">-->
                                 <div class="card-body text-center">
                                     <h2><span class="badge badge-glow bg-warning"><?php echo $characters->all_teacher_count; ?></span>  müəllim</h2>
 
@@ -286,62 +285,63 @@
                             <!--Include Widget Comments-->
                             <?php $this->load->view('partials/_sidebar_widget_polls'); ?>
 
-		<!-- posts -->
-					<div class="col-xs-12 col-sm-12  <?php echo ($layout == "layout_3" || $layout == "layout_6") ? '' : ''; ?>">
-						<div class="row match-height">
-							<!-- printf posts -->
-							<?php $count = 0; ?>
+                            <!-- posts -->
+                            <div class="col-xs-12 col-sm-12  <?php echo ($layout == "layout_3" || $layout == "layout_6") ? '' : ''; ?>">
+                                <div class="row match-height">
+                                    <!-- printf posts -->
+                                    <?php $count = 0; ?>
 
-							<?php foreach ($posts as $item): ?>
-								<?php if ($count != 0 && $count % 2 == 0): ?>
+                                    <?php foreach ($posts as $item): ?>
+                                        <?php if ($count != 0 && $count % 2 == 0): ?>
 
-								<?php endif; ?>
+                                        <?php endif; ?>
 
 
-								<!-- post item -->
-								<?php $this->load->view('post/_post_item', ['item' => $item]); ?>
-								<!-- /.post item -->
+                                        <!-- post item -->
+                                        <?php $this->load->view('post/_post_item', ['item' => $item]); ?>
+                                        <!-- /.post item -->
 
-								<?php if ($count == 1): ?>
+                                        <?php if ($count == 1): ?>
 
-									<?php $this->load->view("partials/_ad_spaces", ["ad_space" => "index_top"]); ?>
+                                            <?php $this->load->view("partials/_ad_spaces", ["ad_space" => "index_top"]); ?>
 
-									<!-- increment count -->
-								<?php endif; ?>
+                                            <!-- increment count -->
+                                        <?php endif; ?>
 
-								<?php $count++;
+                                        <?php $count++;
 
-                                ?>
+                                        ?>
 
-							<?php endforeach; ?>
-						</div>
-					</div><!-- /.posts -->
-<!--                            <div class="divider divider-primary">-->
-<!--                                <div class="divider-text">-->
-<!---->
-<!--                                    <a href="--><?php //echo base_url(); ?><!--boec" type="button" class="btn btn-outline-primary waves-effect">--><?php //echo html_escape(trans("more")); ?><!-- --><?php //echo html_escape(trans("post")); ?><!-- </a>-->
-<!---->
-<!--                                </div>-->
-<!--                            </div>-->
-					<div class="col-xs-12 col-sm-12 col-xs-12">
-						<div class="row">
-							<?php $this->load->view("partials/_ad_spaces", ["ad_space" => "index_bottom"]); ?>
-						</div>
-					</div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div><!-- /.posts -->
+                            <!--                            <div class="divider divider-primary">-->
+                            <!--                                <div class="divider-text">-->
+                            <!---->
+                            <!--                                    <a href="--><?php //echo base_url(); ?><!--boec" type="button" class="btn btn-outline-primary waves-effect">--><?php //echo html_escape(trans("more")); ?><!-- --><?php //echo html_escape(trans("post")); ?><!-- </a>-->
+                            <!---->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                            <div class="col-xs-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <?php $this->load->view("partials/_ad_spaces", ["ad_space" => "index_bottom"]); ?>
+                                </div>
+                            </div>
 
                             <div class="col-xs-12 col-sm-12 col-xs-12">
                                 <div class="row">
-                                <div class="card-body">
-							<?php echo $this->pagination->create_links(); ?>
-                                </div>
+                                    <div class="card-body">
+                                        <?php echo $this->pagination->create_links(); ?>
+                                    </div>
                                 </div>
                             </div>
 
 
 
-				</div>
+                        </div>
 
-			</div>
+                    </div>
+                    <hr>
 
                     <section id="component-swiper-centered-slides">
                         <div class="card bg-transparent shadow-none">
@@ -350,35 +350,33 @@
                                 <div class="swiper-centered-slides swiper-container p-1">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide rounded swiper-shadow">
-                                            <a href=""><img src="http://asoiu.edu.az/public/user/assets/img/tehsil.png"></a>
-<!--                                            <i data-feather="play" class="font-large-1"></i>-->
-<!--                                            <div class="swiper-text pt-md-1 pt-sm-50">Azərbaycan Respublikası Elm və Təhsil Nazirliyi</div>-->
+                                            <a target="_blank" href="https://edu.gov.az"><img style="width: 250px;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/tehsil.png"></a>
                                         </div>
                                         <div class="swiper-slide rounded swiper-shadow">
-                                            <a href=""><img src="http://asoiu.edu.az/public/user/assets/img/tehsil.png"></a>
-                                            <!--                                            <i data-feather="play" class="font-large-1"></i>-->
-                                            <!--                                            <div class="swiper-text pt-md-1 pt-sm-50">Azərbaycan Respublikası Elm və Təhsil Nazirliyi</div>-->
+                                            <a target="_blank" href="https://dim.gov.az"><img style="width: 240px;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/dim.svg"></a>
                                         </div>
                                         <div class="swiper-slide rounded swiper-shadow">
-                                            <i data-feather="dollar-sign" class="font-large-1"></i>
-                                            <div class="swiper-text pt-md-1 pt-sm-50">Dövlət İmtahan Mərkəzi</div>
+                                            <a target="_blank" href="https://eco.gov.az"><img style="width: 159.5px;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/etsn.png"></a>
                                         </div>
                                         <div class="swiper-slide rounded swiper-shadow">
-                                            <i data-feather="dollar-sign" class="font-large-1"></i>
-                                            <div class="swiper-text pt-md-1 pt-sm-50">Dövlət İmtahan Mərkəzi</div>
+                                            <a target="_blank" href="https://asoiu.edu.az"><img style="width: 250px; margin-top: 25%;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/adnsu.png"></a>
                                         </div>
                                         <div class="swiper-slide rounded swiper-shadow">
-                                            <i data-feather="help-circle" class="font-large-1"></i>
-                                            <div class="swiper-text pt-md-1 pt-sm-50">ADNSU</div>
+                                            <a target="_blank" href="https://socar.az"><img style="width: 240px;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/socar.png"></a>
                                         </div>
                                         <div class="swiper-slide rounded swiper-shadow">
-                                            <i data-feather="file-text" class="font-large-1"></i>
-                                            <div class="swiper-text pt-md-1 pt-sm-50">Şirkət</div>
+                                            <a target="_blank" href="https://www.azerishiq.az"><img style="width: 250px; margin-top: 20%;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/azerisiq.svg"></a>
                                         </div>
                                         <div class="swiper-slide rounded swiper-shadow">
-                                            <i data-feather="archive" class="font-large-1"></i>
-                                            <div class="swiper-text pt-md-1 pt-sm-50">Şirkət</div>
+                                            <a target="_blank" href="http://azeristilik.gov.az"><img style="width: 250px; margin-top: 15%;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/azerenerji.png"></a>
                                         </div>
+                                        <div class="swiper-slide rounded swiper-shadow">
+                                            <a target="_blank" href="https://azeristilik.gov.az"><img style="width: 250px; margin-top: 15%;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/azeristilik.png"></a>
+                                        </div>
+                                        <div class="swiper-slide rounded swiper-shadow">
+                                            <a target="_blank" href="https://azeriqaz.az"><img style="width: 250px;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/azeriqaz.png"></a>
+                                        </div>
+
                                     </div>
                                     <!-- Add Arrows -->
                                     <div class="swiper-button-next"></div>
@@ -387,14 +385,14 @@
                             </div>
                         </div>
                     </section>
+<hr>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <!--Sidebar-->
+                        <?php // $this->load->view('partials/_sidebar'); ?>
+                    </div><!--/col-->
 
-			<div class="col-xs-12 col-sm-12 col-md-4">
-				<!--Sidebar-->
-				<?php // $this->load->view('partials/_sidebar'); ?>
-			</div><!--/col-->
-
-		</div>
-	</div>
+                </div>
+            </div>
         </div>
         <!--/ Blog List Items -->
 

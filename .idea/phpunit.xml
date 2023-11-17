@@ -11,8 +11,8 @@
         <option value="$PROJECT_DIR$/b24/v2/application/third_party/domain-parser/true/punycode/tests" />
         <option value="$PROJECT_DIR$/b24/application/third_party/domain-parser/layershifter/tld-extract/tests" />
         <option value="$PROJECT_DIR$/b24/v2/application/third_party/domain-parser/layershifter/tld-database/tests" />
-        <option value="$PROJECT_DIR$/b24/application/third_party/domain-parser/layershifter/tld-support/tests" />
         <option value="$PROJECT_DIR$/b24/v2/application/third_party/domain-parser/layershifter/tld-support/tests" />
+        <option value="$PROJECT_DIR$/b24/application/third_party/domain-parser/layershifter/tld-support/tests" />
       </list>
     </option>
   </component>
