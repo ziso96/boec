@@ -347,7 +347,7 @@
                         <div class="card bg-transparent shadow-none">
 
                             <div class="card-body">
-                                <div class="swiper-centered-slides swiper-container p-1">
+                                <div style="cursor: w-resize;" class="swiper-centered-slides swiper-container p-1">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide rounded swiper-shadow">
                                             <a target="_blank" href="https://edu.gov.az"><img style="width: 250px;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/tehsil.png"></a>
@@ -368,7 +368,7 @@
                                             <a target="_blank" href="https://www.azerishiq.az"><img style="width: 250px; margin-top: 20%;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/azerisiq.svg"></a>
                                         </div>
                                         <div class="swiper-slide rounded swiper-shadow">
-                                            <a target="_blank" href="http://azeristilik.gov.az"><img style="width: 250px; margin-top: 15%;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/azerenerji.png"></a>
+                                            <a target="_blank" href="http://azerenerji.gov.az"><img style="width: 250px; margin-top: 15%;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/azerenerji.png"></a>
                                         </div>
                                         <div class="swiper-slide rounded swiper-shadow">
                                             <a target="_blank" href="https://azeristilik.gov.az"><img style="width: 250px; margin-top: 15%;" src="<?php echo base_url(); ?>v2/app-assets/images/elements/azeristilik.png"></a>
