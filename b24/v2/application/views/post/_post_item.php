@@ -48,7 +48,7 @@
                 </h4>
                 <div class="d-flex">
                     <div class="avatar me-50">
-                        <img src="assets/img/user.png" alt="BOEC" width="24" height="24" />
+                        <img src="<?php echo base_url(); ?>assets/img/user.png" alt="BOEC" width="24" height="24" />
                     </div>
                     <div class="author-info">
                         <small><a href="#" class="text-body">Dərc edilib</a></small>

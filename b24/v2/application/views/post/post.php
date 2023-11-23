@@ -51,7 +51,7 @@
 
                                 <div class="card-body">
                                     <?php if (!empty($post->summary)): ?>
-                                    <h3 class="content-header-title mb-0">
+                                    <h3 class="mb-0">
                                     <?php echo $post->summary; ?>
                                     </h3>
                                     <?php endif; ?>
@@ -68,11 +68,15 @@
                                                 $this->load->view("post/_post_details_slider", ["ad_space" => "post_top"]);
                                             else:
                                                 if (!empty($post->image_big)): ?>
-                                                    <img style="float: left; margin: 0 15px 0 0;" src="<?php echo get_post_image($post, 'big'); ?>" class="img-responsive center-image" alt="<?php echo html_escape($post->title); ?>"/>
+                                                    <div class="row match-height">
+                                                    <div class="col-md-6 col-sm-12 col-12">
+                                                    <img style="width: 100%; float: left; margin: 0 15px 0 0;" src="<?php echo get_post_image($post, 'big'); ?>" class="img-responsive center-image mb-3" alt="<?php echo html_escape($post->title); ?>"/>
+                                                    </div>
                                                 <?php endif; ?>
                                             <?php endif; ?>
-                                    <?php $this->load->view("partials/_ad_spaces", ["ad_space" => "post_top"]); ?>
 
+                                    <?php $this->load->view("partials/_ad_spaces", ["ad_space" => "post_top"]); ?>
+                                        <div class="col-md-6 col-sm-12 col-12">
                                     <div class="post-text text-style">
 
                                         <?php echo $post->content; ?>
@@ -97,6 +101,8 @@
                                                 <?php endforeach; ?>
                                             </div>
                                         <?php endif; ?>
+                                    </div>
+                                    </div>
                                     </div>
 
                                         </div>
