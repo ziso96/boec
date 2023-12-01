@@ -49,7 +49,7 @@ class Upload_model extends CI_Model
 	{
 		try {
 			$image = new ImageResize($path);
-			$image->quality_jpg = 85;
+			$image->quality_jpg = 100;
 			$image->resizeToWidth(750);
 			$new_path = 'uploads/images/image_750x_' . uniqid() . '.jpg';
 			$image->save(FCPATH . $new_path, IMAGETYPE_JPEG);
@@ -64,7 +64,7 @@ class Upload_model extends CI_Model
 	{
 		try {
 			$image = new ImageResize($path);
-			$image->quality_jpg = 85;
+			$image->quality_jpg = 100;
 			$image->crop(750, 415, true);
 			$new_path = 'uploads/images/image_750x415_' . uniqid() . '.jpg';
 			$image->save(FCPATH . $new_path, IMAGETYPE_JPEG);
@@ -79,7 +79,7 @@ class Upload_model extends CI_Model
 	{
 		try {
 			$image = new ImageResize($path);
-			$image->quality_jpg = 85;
+			$image->quality_jpg = 100;
 			$image->crop(100, 75, true);
 			$new_path = 'uploads/images/image_100x75_' . uniqid() . '.jpg';
 			$image->save(FCPATH . $new_path, IMAGETYPE_JPEG);
@@ -94,7 +94,7 @@ class Upload_model extends CI_Model
 	{
 		try {
 			$image = new ImageResize($path);
-			$image->quality_jpg = 85;
+			$image->quality_jpg = 100;
 			$image->crop(650, 433, true);
 			$new_path = 'uploads/images/image_650x433_' . uniqid() . '.jpg';
 			$image->save(FCPATH . $new_path, IMAGETYPE_JPEG);
@@ -109,7 +109,7 @@ class Upload_model extends CI_Model
 	{
 		try {
 			$image = new ImageResize($path);
-			$image->quality_jpg = 85;
+			$image->quality_jpg = 100;
 			$image->resizeToWidth(1920);
 			$new_path = 'uploads/gallery/image_1920x_' . uniqid() . '.jpg';
 			$image->save(FCPATH . $new_path, IMAGETYPE_JPEG);
@@ -124,7 +124,7 @@ class Upload_model extends CI_Model
 	{
 		try {
 			$image = new ImageResize($path);
-			$image->quality_jpg = 85;
+			$image->quality_jpg = 100;
 			$image->resizeToWidth(500);
 			$new_path = 'uploads/gallery/image_500x_' . uniqid() . '.jpg';
 			$image->save(FCPATH . $new_path, IMAGETYPE_JPEG);
@@ -184,7 +184,7 @@ class Upload_model extends CI_Model
 	{
 		try {
 			$image = new ImageResize($path);
-			$image->quality_jpg = 85;
+			$image->quality_jpg = 100;
 			$image->crop(200, 200, true);
 			$new_path = 'uploads/profile/avatar_' . $user_id . '_' . uniqid() . '.jpg';
 			$image->save(FCPATH . $new_path, IMAGETYPE_JPEG);

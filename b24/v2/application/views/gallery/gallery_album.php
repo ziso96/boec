@@ -16,10 +16,13 @@
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="<?php echo lang_base_url(); ?>"><?php echo html_escape(trans("home")); ?></a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="<?php echo lang_base_url(); ?>/gallery"><?php echo html_escape($page->title); ?></a>
+                                    <li class="breadcrumb-item"><a href="<?php echo lang_base_url(); ?>gallery"><?php echo html_escape($page->title); ?></a>
                                     </li>
-                                    <li class="breadcrumb-item active"><?php echo html_escape($album->name); ?>
+                                    <?php foreach ($gallery_images as $item): ?>
+                                    <?php endforeach; ?>
+                                    <li class="breadcrumb-item active"><?php echo html_escape($item->title); ?>
                                     </li>
+
                                 </ol>
                             </div>
                         <?php else: ?>
@@ -85,7 +88,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <img class="card-img-top full-height" src="<?php echo base_url() . html_escape($item->path_small); ?>" alt="<?php echo html_escape($item->title); ?>" />
+                                        <img class="card-img-top full-height" src="<?php echo base_url() . html_escape($item->path_big); ?>" alt="<?php echo html_escape($item->title); ?>" />
                                     </div>
                                     <div class="modal-body">
 

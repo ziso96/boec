@@ -105,11 +105,12 @@
                                     </div>
                                     </div>
 
-                                        </div>
+
                                     <?php endif; ?>
 
 
                                 <div class="card-body">
+                                    <hr>
                                     <h3><?php echo html_escape(trans("tags")); ?></h3>
 
                                     <div class="my-1 py-25">
