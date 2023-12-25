@@ -204,7 +204,7 @@ if ($language->id == $site_lang->id):?>
                 </div>
             </li>
             <?php else : ?>
-            <?php if ($general_settings->registration_system == 1): ?>
+            <?php if ($general_settings->registration_system != 1): ?>
 
             <a href="https://boec.edu.az.umanage.az" target="_blank" type="button" class="btn btn-primary waves-effect">U-BOEC</a>
            <!-- <a href="<?php // echo lang_base_url(); ?>login" type="button" class="btn btn-outline-success waves-effect me-1"><?php // echo html_escape(trans("login")); ?></a>
