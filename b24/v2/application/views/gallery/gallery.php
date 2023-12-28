@@ -41,6 +41,7 @@
                 <div class="row match-height">
                     <?php foreach ($gallery_albums as $item):
                     $cover = get_gallery_cover_image($item->id); ?>
+
                     <div class="col-md-6 col-lg-4">
 
                         <div class="card">
