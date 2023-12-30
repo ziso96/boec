@@ -39,8 +39,9 @@
 
             <section id="card-demo-example">
                 <div class="row match-height">
-                    <?php foreach ($gallery_albums as $item):
-                    $cover = get_gallery_cover_image($item->id); ?>
+                    <?php foreach (array_reverse($gallery_albums) as $item):
+                    $cover = get_gallery_cover_image($item->id);
+                    ?>
 
                     <div class="col-md-6 col-lg-4">
 
