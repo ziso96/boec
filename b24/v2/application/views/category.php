@@ -25,9 +25,9 @@
                                     </li>
                                 <?php else:
                                     if (!empty($category_array['parent_category'])):?>
-                                        <li class="breadcrumb-item">
-                                            <?php echo html_escape($category_array['parent_category']->name); ?>
-                                        </li>
+<!--                                        <li class="breadcrumb-item">-->
+<!--                                            --><?php //echo html_escape($category_array['parent_category']->name); ?>
+<!--                                        </li>-->
                                     <?php endif;
                                 endif; ?>
                                 <li class="breadcrumb-item active"><?php echo html_escape(trans("category")); ?></li>
